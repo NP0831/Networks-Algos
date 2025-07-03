@@ -30,7 +30,7 @@ Follow the on-screen instructions to perform desired actions.
 
 ---
 
-# DNS Resolver in C++
+## DNS Resolver in C++
 
 This is a basic **DNS Resolver** program written in C++. It allows the user to input a domain name and queries a DNS server to resolve it to an IP address (supports IPv4). The program also includes a simple caching mechanism to avoid repeated lookups.
 
@@ -80,3 +80,93 @@ Enter the hostname: exit
 
 - Uses raw UDP sockets and constructs DNS packets manually.
   Does not require root access.
+
+  ---
+
+  ## Terminal-Based Peer-to-Peer Chat Application (Client & Server)
+
+This project is a simple **peer-to-peer chat system** implemented in C++ using TCP sockets and multithreading. It supports real-time message exchange, user listing, and private messaging between clients.
+
+
+
+## 🔧 Components
+
+- `chat-server.cpp`: Central server that keeps track of active users.
+- `chat-client.cpp`: Client application for sending/receiving messages.
+
+
+## 📦 Features
+
+- Private messaging between users
+- Broadcast messaging to all active users
+- View list of active users
+- Handles multiple clients concurrently
+- Real-time message receiving using threads
+
+## 🛠️ Requirements
+
+- Linux or UNIX-based OS
+- g++ (with C++11 or higher)
+- Terminal access for compiling and running
+
+
+## 🚀 How to Run
+
+### 1. Compile both files
+
+```bash
+g++ -o chat-server chat-server.cpp -pthread
+g++ -o chat-client chat-client.cpp -pthread
+```
+
+### 2. Start the server
+
+```bash
+./chat-server
+```
+
+Server runs on port `8080` by default.
+
+### 3. Start clients (in separate terminals)
+
+```bash
+./chat-client
+```
+
+### 4. Follow the prompts
+> Enter name: Alice
+> Enter your port number: 5001
+
+
+## 💬 Client Options
+
+After connecting:
+
+```text
+3 ==> Broadcast to all users
+2 ==> Get current active users
+1 ==> Send private message
+0 ==> Quit
+```
+
+## 🔄 Example Usage
+
+```text
+> Enter name: Bob
+> Enter your port number: 5002
+> Connected to server
+
+*****Press any of the following:*****
+3 ==> Broadcast
+2 ==> Get Current Active Users
+1 ==> Send message
+0 ==> Quit
+```
+
+## 📝 Notes
+- Clients run their own receiving server on their chosen port.
+- The main server (on port 8080) tracks active users and their ports.
+- All communication between clients is direct once they know each other's port.
+- INADDR_ANY is used for local-only testing; for LAN support, use real IPs.
+
+
