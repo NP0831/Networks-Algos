@@ -58,32 +58,24 @@ g++ -o dns_resolver dns_resolver.cpp
 ```
 
 3. **Follow the prompt:**
-
-```text
 Enter the hostname: google.com
-```
+
 
 4. **Type `exit` to quit:**
-
-```text
 Enter the hostname: exit
-```
+
 
 ---
 
 ## Requirements
-
-```text
 - Linux environment (uses POSIX networking headers)
 - g++ compiler (C++11 or higher)
 - Internet connection to reach DNS servers
-```
 
 ---
 
 ## Notes
 
-```text
 - The DNS server is hardcoded as 172.17.1.1 in the code.
   You can replace it with a public DNS server like 8.8.8.8 (Google DNS).
 
@@ -91,4 +83,3 @@ Enter the hostname: exit
 
 - Uses raw UDP sockets and constructs DNS packets manually.
   Does not require root access.
-```
