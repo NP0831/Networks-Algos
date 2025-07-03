@@ -83,7 +83,7 @@ Enter the hostname: exit
 
   ---
 
-  ## Terminal-Based Peer-to-Peer Chat Application (Client & Server)
+## Terminal-Based Peer-to-Peer Chat Application (Client & Server)
 
 This project is a simple **peer-to-peer chat system** implemented in C++ using TCP sockets and multithreading. It supports real-time message exchange, user listing, and private messaging between clients.
 
