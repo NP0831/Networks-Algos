@@ -28,11 +28,12 @@ Upon running the program, users are presented with a menu to perform various act
 
 Follow the on-screen instructions to perform desired actions.
 
+---
+
 # DNS Resolver in C++
 
 This is a basic **DNS Resolver** program written in C++. It allows the user to input a domain name and queries a DNS server to resolve it to an IP address (supports IPv4). The program also includes a simple caching mechanism to avoid repeated lookups.
 
----
 
 ## Features
 
@@ -41,7 +42,6 @@ This is a basic **DNS Resolver** program written in C++. It allows the user to i
 - Retries on timeout (up to 3 attempts)  
 - Maintains a local cache for faster repeated queries  
 
----
 
 ## Usage
 
@@ -65,14 +65,11 @@ Enter the hostname: google.com
 Enter the hostname: exit
 
 
----
-
 ## Requirements
 - Linux environment (uses POSIX networking headers)
 - g++ compiler (C++11 or higher)
 - Internet connection to reach DNS servers
 
----
 
 ## Notes
 
