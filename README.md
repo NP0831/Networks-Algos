@@ -81,7 +81,7 @@ Enter the hostname: exit
 - Uses raw UDP sockets and constructs DNS packets manually.
   Does not require root access.
 
-  ---
+---
 
 ## Terminal-Based Peer-to-Peer Chat Application (Client & Server)
 
